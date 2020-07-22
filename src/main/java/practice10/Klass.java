@@ -24,6 +24,14 @@ public class Klass {
         }
     }
 
+    public boolean isIn(Student student){
+        if(student.getKlass().number == this.number){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     public void appendMember(Student student){
         student.setKlass(this);
     }
